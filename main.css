@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* { /* giving the pic 100%*/
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: url('backgr.png') no-repeat center center ; /* change background perfectly*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+}
+nav ul{
+    font-family: 'Proxima Nova';
+    color: #ffff;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+nav h1{
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    padding: 35px;
+    letter-spacing: 7%;
+
+}
+nav ul li{
+    padding: 40px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffff;
+    letter-spacing: 7%;
+
+}
+/* the center quote and buttons*/
+.containerquote {
+    font-family:'Proxima Nova' , sans-serif;
+    color: #ffff;
+    font-size: larger;
+    text-align: center;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10%;
+    font-size: 30px;
+
+}
+.headerbuttons{
+    padding-top: 30px;
+    padding-left: 10%;
+}
+.headerbuttons a{
+    text-decoration: none;
+}
+.ShowMore{
+    background:#477FC4;
+    padding: 10px;
+    border-radius:10px;
+    margin: -6px;
+    color: white;
+    font-family: 'Proxima Nova',sans-serif;
+    font-size: 15px;
+}
+.ContactUs{
+    border-style: solid; 
+    padding: 10px;
+    border-width: thin;
+    border-radius: 10px;
+    margin: 25px;
+    color: white;
+    font-family: 'Proxima Nova',sans-serif;
+    font-size: 15px;
+}
+/* the body and cards*/
+body{
+    background-color: #67A9DD;
+    width: 100%;
+    height: 100%;
+}
+.containertitle{
+   color: #ffff;
+    font-family:'Wondar Quason Free', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 80px;
+}
+/*cards*/
+ .cards{
+    width: 100%;
+    height:100vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    
+    width: 20vw;
+    background-color: #fff;
+    border-radius: 10px ;
+ }
+img{
+    border-radius: 10px;
+    width: 20vw;
+}
+.containername{
+    padding: 15px 16px;
+}
+.cards h4{
+    font-family: 'Proxima Nova',sans-serif;
+    color: #041D7C;
+    size: 15px;
+}
+/*footer*/
+footer{
+    background-color: #041c7c96;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+footer ul li{
+    padding: 8px;
+    list-style: none;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #ffff;
+    letter-spacing: 10%;
+    padding-right: 150px;
+    padding-left: 150px;
+     font-family: 'Proxima Nova',sans-serif;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.fa-ellipsis-v {
+    display: none;
+}
+
+/*mediaqueries*/
+@media  all and (max-width: 500px ) {
+    header {
+        width: 100%;
+        background: url('backgr.png')  100% ; /* change background perfectly*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+
+    }
+    nav{
+       display:block;
+       font-size: 10px;
+   }
+   nav ul{ 
+       display:block;  
+   }
+   nav a {
+       font-size: 15px;
+   }
+   nav ul li{
+       padding: 8px;
+       margin-left: 10px;
+       justify-content: none;
+       display: block; 
+   }
+.WitchesStore{
+    width: 100%;
+    text-align: center;
+}
+   /* the quote and cards*/
+   .containerquote{
+       font-size: 15px;
+       display:flex;
+       padding-top: 50px; 
+       text-align: center;
+      
+      
+   }
+   .containertitle{
+    width: 100%;
+    height: 20vh;
+   }
+   .containertitle h2{
+      font-size: 20px;
+     
+   }
+   .cards{
+       display: flex;
+      flex-direction: column;
+      width: 100%; 
+      height: 130vh;
+      margin-top:30px;
+      
+   }
+   .card{
+       width: 60%;
+       height: 30%;
+   }
+    .cards .card img{
+        width: 100%;
+        height: 80%;
+    }
+    /* footer*/
+    footer{
+        justify-content: none;
+        display: block;      
+        font-size: 10px;
+        width: 100%;
+ 
+    }
+    footer ul{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        width: 100%;
+        
+    }
+    footer ul li {
+       
+        padding: 10px;
+        margin: 0;
+    }
+    footer ul li a {
+        display: block;
+        padding: 0;
+    }
+  
+   
+
+
+    
+
+
+
+
+
+   
+}
